@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/javascript" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Page Title</title>
+  </head>
+
+  <body>
+    <form action="index.php" method="post">
+      <h3 id="form form-1">Datum</h3>
+      <select id="date" name="date">
+        <option value="val-1">Val-1</option>
+        <option value="val-2">val-2</option>
+        <option value="val-3">val-3</option>
+        <option value="val-4">val-4</option>
+        <option value="val-5">val-5</option>
+      </select>
+
+      <h3 id="form form-2">Välj tid</h3>
+      <select id="time" name="time">
+        <option value="14:00">14:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+
+      <h3 id="form form-3">Ämne:</h3>
+      <select id="subject" name="subject">
+        <option value="val-1">Val-1</option>
+        <option value="val-2">val-2</option>
+        <option value="val-3">val-3</option>
+        <option value="val-4">val-4</option>
+        <option value="val-5">val-5</option>
+      </select>
+
+      <h3 id="form form-4">Paket:</h3>
+      <select id="paket" name="paket">
+        <option value="val-1">Val-1</option>
+        <option value="val-2">val-2</option>
+        <option value="val-3">val-3</option>
+        <option value="val-4">val-4</option>
+        <option value="val-5">val-5</option>
+      </select>
+
+      <h3 id="form form-5">Skola</h3>
+      <select id="school" name="school">
+        <option value="val-1">Val-1</option>
+        <option value="val-2">val-2</option>
+        <option value="val-3">val-3</option>
+        <option value="val-4">val-4</option>
+        <option value="val-5">val-5</option>
+      </select>
+
+      <legend id="form form-6">Årskurs:</legend>
+      <select id="klass" name="klass">
+        <input type="checkbox" id="year-of-class-1" name="klass[]" value="Årskurs 1" />Årskurs 1
+        <br />
+        <input type="checkbox" id="year-of-class-2" name="klass[]" value="Årskurs 2" />Årskurs 2
+        <br />
+        <input type="checkbox" id="year-of-class-3" name="klass[]" value="Årskurs 3"/>Årskurs 3
+        <br />
+        <input type="checkbox" id="year-of-class-4" name="klass[]" value="Årskurs 4"/>Årskurs 4
+        <br />
+        <input type="checkbox" id="year-of-class-5" name="klass[]" value="Årskurs 5"/>Årskurs 5
+        <br />
+        <input type="checkbox" id="year-of-class-6" name="klass[]" value="Årskurs 6"/>Årskurs 6
+        <br />
+        <input type="checkbox" id="year-of-class-7" name="klass[]" value="Årskurs 7"/>Årskurs 7
+        <br />
+        <input type="checkbox" id="year-of-class-8" name="klass[]" value="Årskurs 8"/>Årskurs 8
+        <br />
+        <input type="checkbox" id="year-of-class-9" name="klass[]" value="Årskurs 9"/>Årskurs 9
+        <br />
+        <input type="checkbox" id="year-of-class-g-1" name="klas[]s" value="Gymnasiet 1" />Gymnasiet
+        1a år
+        <br />
+        <input type="checkbox" id="year-of-class-g-2" name="klass[]" value="Gymnasiet 2" />Gymnasiet
+        2a år
+        <br />
+        <input type="checkbox" id="year-of-class-g-3" name="klass[]" value="Gymnasiet 3" />Gymnasiet
+        3e år
+        <br />
+      </select>
+
+      <h3 id="form form-6">Kommun:</h3>
+      <select id="county" name="county">
+        <option value="sten">Stenungsund</option>
+        <option value="kung">Kungälv</option>
+        <option value="orust">Orust</option>
+        <option value="tjörn">Tjörn</option>
+        <option value="udde">Uddevalla</option>
+      </select>
+
+      <h3 id="form form-7">Lärare:</h3>
+      <input type="text" id="fname" name="fname" required /><br />
+      <input type="text" id="lname" name="lname" required />
+
+      <h3 id="form form-8" for="quantity" class="form" required>
+        Antal elever:
+      </h3>
+      <input type="number" id="quantity" name="quantity" min="1" max="40" />
+
+      <h3 id="form form-9">Email:</h3>
+      <input type="text" id="email" name="email" />
+
+      <h3 id="form form-10">Telefonnummer:</h3>
+      <input type="number" id="number" name="phone" />
+
+      <h3 id="form form-11">Övrigt:</h3>
+      <input type="text" id="other" name="other" />
+
+      <div>
+        <button value="cancel">Avbryt</button>
+        <input id="confirmBtn" type="submit">Bekräfta</input>
+      </div>
+    </form>
+
+    <output></output>
+
+    <script>
+      let exports = {};
+    </script>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="/db.js"></script>
+  </body>
+</html>
